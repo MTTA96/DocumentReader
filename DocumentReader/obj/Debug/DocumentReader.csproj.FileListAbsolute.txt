@@ -21,3 +21,42 @@ D:\Projects\Winforms\New folder\DocumentReader\DocumentReader\bin\Debug\Document
 D:\Projects\Winforms\New folder\DocumentReader\DocumentReader\bin\Debug\DocumentReader.application
 D:\Projects\Winforms\New folder\DocumentReader\DocumentReader\obj\Debug\DocumentReader.exe.manifest
 D:\Projects\Winforms\New folder\DocumentReader\DocumentReader\obj\Debug\DocumentReader.application
+D:\Personal\Desktop\DocumentReader\DocumentReader\bin\Debug\DocumentReader.exe.config
+D:\Personal\Desktop\DocumentReader\DocumentReader\bin\Debug\DocumentReader.exe.manifest
+D:\Personal\Desktop\DocumentReader\DocumentReader\bin\Debug\DocumentReader.application
+D:\Personal\Desktop\DocumentReader\DocumentReader\bin\Debug\DocumentReader.exe
+D:\Personal\Desktop\DocumentReader\DocumentReader\bin\Debug\DocumentReader.pdb
+D:\Personal\Desktop\DocumentReader\DocumentReader\bin\Debug\FontAwesome.WPF.dll
+D:\Personal\Desktop\DocumentReader\DocumentReader\bin\Debug\FontAwesome.WPF.xml
+D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\DocumentReader.csprojAssemblyReference.cache
+D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\DocumentReader.csproj.ResolveComReference.cache
+D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\MainWindow.g.cs
+D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\App.g.cs
+D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\DocumentReader_MarkupCompile.cache
+D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\DocumentReader_MarkupCompile.lref
+D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\MainWindow.baml
+D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\DocumentReader.g.resources
+D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\DocumentReader.Properties.Resources.resources
+D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\DocumentReader.csproj.GenerateResource.cache
+D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\DocumentReader.csproj.CoreCompileInputs.cache
+D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\DocumentReader.exe.manifest
+D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\DocumentReader.application
+D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\DocumentReader.csproj.CopyComplete
+D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\DocumentReader.exe
+D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\DocumentReader.pdb
+D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\Views\UCs\DocumentViewerControl.g.cs
+D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\Views\UCs\SoldierListUC.g.cs
+D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Personal\Desktop\DocumentReader\DocumentReader\bin\Debug\MaterialDesignColors.dll
+D:\Personal\Desktop\DocumentReader\DocumentReader\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\Personal\Desktop\DocumentReader\DocumentReader\bin\Debug\ShowMeTheXAML.dll
+D:\Personal\Desktop\DocumentReader\DocumentReader\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\Personal\Desktop\DocumentReader\DocumentReader\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\App.baml
+D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\Views\UCs\DocumentViewerControl.baml
+D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\Views\UCs\SoldierListUC.baml
+D:\Personal\Desktop\DocumentReader\DocumentReader\bin\Debug\EntityFramework.dll
+D:\Personal\Desktop\DocumentReader\DocumentReader\bin\Debug\EntityFramework.SqlServer.dll
+D:\Personal\Desktop\DocumentReader\DocumentReader\bin\Debug\EntityFramework.xml
+D:\Personal\Desktop\DocumentReader\DocumentReader\bin\Debug\EntityFramework.SqlServer.xml
+D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\DocumentReader_Content.g.cs

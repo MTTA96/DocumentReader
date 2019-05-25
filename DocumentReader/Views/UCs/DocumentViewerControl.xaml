@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="DocumentReader.Views.UCs.DocumentViewerControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DocumentReader.Views.UCs"
+             xmlns:fa="http://schemas.fontawesome.io/icons/"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Name="lable1" Margin="3,6,0,0" Content="Word Document :" VerticalAlignment="Top" HorizontalAlignment="Left" />
+        <TextBox  Name="txbSelectedWordFile" VerticalAlignment="Top"  HorizontalAlignment="Stretch" Margin="110,10,300,0" HorizontalContentAlignment="Left" />
+        <Button HorizontalAlignment="Right" VerticalAlignment="Top" Width="150" Content="Select Word File" Name="btnSelectWord" Margin="0,10,130,0" Click="btnSelectWord_Click" />
+        <Button HorizontalAlignment="Left" Margin="3, 40, 0, 0" VerticalAlignment="Top" Content="Previous" Width="100" Name="btnPrevious" Click="btnPreviousFile_Click" IsEnabled="False"/>
+        <Button HorizontalAlignment="Left" Margin="120, 40, 0, 0" VerticalAlignment="Top" Content="Next" Width="100" Name="btnNext" Click="btnNextFile_Click" IsEnabled="False"/>
+        <DocumentViewer Grid.Row="1" Name="documentviewWord" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <fa:ImageAwesome Name="spinner" Icon="Spinner" Spin="True" Height="48" Width="48" Grid.Column="1" Grid.Row="1" Visibility="Hidden"/>
+    </Grid>
+</UserControl>
