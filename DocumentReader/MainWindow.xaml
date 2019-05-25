@@ -4,16 +4,19 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DocumentReader.Views.UCs"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         Title="Document Reader"  Height="600" Width="1024">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
             <Grid x:Name="GridMain">
                 <local:SoldierListUC></local:SoldierListUC>
             </Grid>
         </Grid>
+        <materialDesign:DialogHost HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Identifier="RootDialog">
+        </materialDesign:DialogHost>
     </Grid>
 </Window>

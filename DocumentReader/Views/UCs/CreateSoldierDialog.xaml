@@ -1,0 +1,60 @@
+﻿<UserControl x:Class="DocumentReader.Views.UCs.CreateSoldierDialog"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:domain="clr-namespace:DocumentReader.Utils"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
+             xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf;assembly=MaterialDesignThemes.Wpf"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <TextBlock>Thêm chiến sĩ:</TextBlock>
+        
+        <!-- NAME -->
+        <TextBox 
+            Name="txbName"
+            domain:HintAssist.Hint="Name" Style="{DynamicResource MaterialDesignFloatingHintTextBox}"                 
+            Margin="0 6 0 0"
+            FontSize="18" Grid.Row="1">
+            <TextBox.Text>
+                <Binding Path="Name" UpdateSourceTrigger="PropertyChanged">
+                    <Binding.ValidationRules>
+                        <domain:NotEmptyValidationRule ValidatesOnTargetUpdated="True" />
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+        
+        <!-- DOB -->
+        <DatePicker
+            Name="dobPicker"
+            Grid.Row="2"
+            Margin="0 8 0 0"
+            domain:HintAssist.Hint="Ngày sinh"
+            Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
+        
+        <!-- BUTTONS -->
+        <StackPanel Orientation="Horizontal" Grid.Row="3"
+                    Margin="0 16 0 0">
+            <Button Name="btnUpdateSoldier" IsDefault="True" Style="{DynamicResource MaterialDesignFlatButton}" Click="BtnUpdateSoldier_Click">
+                <Button.CommandParameter>
+                    <system:Boolean>True</system:Boolean>
+                </Button.CommandParameter>
+                THÊM
+            </Button>
+            <Button Name="btnCancel" IsCancel="True" Margin="8 0 0 0" Style="{DynamicResource MaterialDesignFlatButton}" Click="BtnCancel_Click">
+                <Button.CommandParameter>
+                    <system:Boolean>False</system:Boolean>
+                </Button.CommandParameter>
+                HỦY
+            </Button>
+        </StackPanel>
+    </Grid>
+</UserControl>

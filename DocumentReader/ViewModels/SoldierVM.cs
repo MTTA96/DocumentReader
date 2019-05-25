@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data.Entity;
 using System.Data.Entity.Core.Objects;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace DocumentReader.ViewModels
 {
@@ -30,6 +31,9 @@ namespace DocumentReader.ViewModels
         {
             try
             {
+                if(Soldiers.Count > 0)
+                    Soldiers.Clear();
+
                 List<Soldier> soldiersFromDb = context.Soldiers.ToListAsync().Result;
                 foreach (Soldier soldier in soldiersFromDb)
                 {
@@ -38,6 +42,7 @@ namespace DocumentReader.ViewModels
             }
             catch (Exception ex)
             {
+                MessageBox.Show("Lấy dữ liệu thất bại, vui lòng thử lại!");
             }
         }
 

@@ -1,4 +1,6 @@
-﻿using DocumentReader.ViewModels;
+﻿using DocumentReader.Utils;
+using DocumentReader.ViewModels;
+using MaterialDesignThemes.Wpf;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,6 +42,32 @@ namespace DocumentReader.Views.UCs
                 //myCollectionViewSource.Source = your data
                 soldierVM.LoadSoldiers();
             }
+        }
+
+        private async void BtnCreateSoldier_Click(object sender, RoutedEventArgs e)
+        {
+            var view = new CreateSoldierDialog();
+
+            //show the dialog
+            DialogHelper.showCreateSoldier(view, action: isCancel => {
+                if(!isCancel)
+                    soldierVM.LoadSoldiers();
+            });
+        }
+
+        private void BtnEditSoldier_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnDeleteSoldier_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnViewDocument_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
