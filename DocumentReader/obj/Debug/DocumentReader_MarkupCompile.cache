@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Personal\Desktop\DocumentReader\DocumentReader\App.xaml
-3-483503370
-21893327372
-122104566221
-261402482422
-MainWindow.xaml;Views\UCs\DocumentViewerControl.xaml;Views\UCs\SoldierListUC.xaml;
+5-291448025
 
-False
+2859626476
+2779219745
+MainWindow.xaml;Views\Dialogs\Dialogs.xaml;Views\UCs\CreateSoldierDialog.xaml;Views\UCs\DocumentViewerControl.xaml;Views\UCs\SoldierListUC.xaml;
+
+True
 

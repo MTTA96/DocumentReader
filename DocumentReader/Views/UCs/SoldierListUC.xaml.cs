@@ -37,21 +37,17 @@ namespace DocumentReader.Views.UCs
             // Do not load your data at design time.
              if (!System.ComponentModel.DesignerProperties.GetIsInDesignMode(this))
             {
-                //Load your data here and assign the result to the CollectionViewSource.
-                //System.Windows.Data.CollectionViewSource myCollectionViewSource = (System.Windows.Data.CollectionViewSource)this.Resources["Resource Key for CollectionViewSource"];
-                //myCollectionViewSource.Source = your data
                 soldierVM.LoadSoldiers();
             }
         }
 
-        private async void BtnCreateSoldier_Click(object sender, RoutedEventArgs e)
+        private void BtnCreateSoldier_Click(object sender, RoutedEventArgs e)
         {
             var view = new CreateSoldierDialog();
 
             //show the dialog
             DialogHelper.showCreateSoldier(view, action: isCancel => {
-                if(!isCancel)
-                    soldierVM.LoadSoldiers();
+
             });
         }
 
@@ -62,12 +58,39 @@ namespace DocumentReader.Views.UCs
 
         private void BtnDeleteSoldier_Click(object sender, RoutedEventArgs e)
         {
-
+            deleteSoldier();
         }
 
         private void BtnViewDocument_Click(object sender, RoutedEventArgs e)
         {
 
         }
+
+        #region SUPPORT FUNC
+
+        private async void deleteSoldier()
+        {
+            if (lvSoldierList.SelectedIndex != -1)
+            {
+                DialogHelper.show(string.Format("Xóa chiến sĩ {0}?", soldierVM.Soldiers[lvSoldierList.SelectedIndex].Name),
+                    positiveButtonTitle: "Xóa",
+                    negativeButtonTitle: "Hủy",
+                    type: DialogType.WARNING,
+                    action:async confirmed =>
+                        {
+                            if (confirmed)
+                            {
+                                bool isSuccess = await soldierVM.DeleteSoldier(lvSoldierList.SelectedIndex);
+                                if (isSuccess)
+                                {
+                                    soldierVM.LoadSoldiers();
+                                }
+                            }
+                        }
+                );
+            }
+        }
+
+        #endregion
     }
 }

@@ -8,7 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("models/soldier.context.tt")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("models/soldier.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("models/soldier.edmx.sql")]
 
 

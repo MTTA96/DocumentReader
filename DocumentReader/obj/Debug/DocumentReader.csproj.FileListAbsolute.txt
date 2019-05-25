@@ -28,7 +28,6 @@ D:\Personal\Desktop\DocumentReader\DocumentReader\bin\Debug\DocumentReader.exe
 D:\Personal\Desktop\DocumentReader\DocumentReader\bin\Debug\DocumentReader.pdb
 D:\Personal\Desktop\DocumentReader\DocumentReader\bin\Debug\FontAwesome.WPF.dll
 D:\Personal\Desktop\DocumentReader\DocumentReader\bin\Debug\FontAwesome.WPF.xml
-D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\DocumentReader.csprojAssemblyReference.cache
 D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\DocumentReader.csproj.ResolveComReference.cache
 D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\MainWindow.g.cs
 D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\App.g.cs
@@ -59,4 +58,10 @@ D:\Personal\Desktop\DocumentReader\DocumentReader\bin\Debug\EntityFramework.dll
 D:\Personal\Desktop\DocumentReader\DocumentReader\bin\Debug\EntityFramework.SqlServer.dll
 D:\Personal\Desktop\DocumentReader\DocumentReader\bin\Debug\EntityFramework.xml
 D:\Personal\Desktop\DocumentReader\DocumentReader\bin\Debug\EntityFramework.SqlServer.xml
-D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\DocumentReader_Content.g.cs
+D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\Views\UCs\CreateSoldierDialog.g.cs
+D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\Views\UCs\CreateSoldierDialog.baml
+D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\DocumentReader.Migrations.InitialDb.resources
+D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\DocumentReader.csprojAssemblyReference.cache
+D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\DocumentReader.Migrations.ChangeDobFromDateTimeToString.resources
+D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\Views\Dialogs\Dialogs.g.cs
+D:\Personal\Desktop\DocumentReader\DocumentReader\obj\Debug\Views\Dialogs\Dialogs.baml

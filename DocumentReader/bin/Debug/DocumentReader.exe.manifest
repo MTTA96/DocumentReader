@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DocumentReader.exe" size="35288">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DocumentReader.exe" size="82392">
       <assemblyIdentity name="DocumentReader" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>yN6JWIUJfqKWPsGzR9D5xJdBd6GvoHPUs9tm/HsgOiU=</dsig:DigestValue>
+        <dsig:DigestValue>9WdDI+wX2NdsHYADwUHxtUsMjI2SANelcRg8E+iKr0k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -125,31 +125,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="DocumentReader.exe.config" size="1599">
+  <file name="DocumentReader.exe.config" size="1435">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>qqxZymF885jEZFXL6ty1ok4JBn1ecxHWmGKBX1ojVCA=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Models\Soldier.Context.tt" size="22931">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>HtRrA5YckypUoasYDG52PPRqxA2Ti3ydP6iWSbmvME8=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Models\Soldier.tt" size="25276">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>hp51VRVMvDq5wfecZQ+WIM2DvWz8x0XNE8JDIKuUmtk=</dsig:DigestValue>
+      <dsig:DigestValue>yydrZ90A0bIBOFNaXEcy+LAH4DR2Kd2YZ1FaDvdIyL0=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

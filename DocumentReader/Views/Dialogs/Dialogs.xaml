@@ -1,0 +1,77 @@
+﻿<UserControl x:Class="DocumentReader.Views.Dialogs.Dialogs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DocumentReader.Views.Dialogs"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.ProgressBar.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Button.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.DialogHost.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid>
+        <!--#region Notification Dialog-->
+        <materialDesign:DialogHost Style="{StaticResource MaterialDesignEmbeddedDialogHost}" DialogMargin="8" Identifier="NotificationDialog">
+            <materialDesign:DialogHost.DialogContentTemplate>
+                <DataTemplate DataType="local:DialogMessage">
+                    <StackPanel Margin="16">
+                        <TextBlock FontWeight="Bold" Margin="0, 0, 0, 8" Text="{Binding title}" />
+                        <TextBlock Text="{Binding message}" />
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 15 8 0" >
+                            <Button Style="{StaticResource MaterialDesignFlatButton}"
+                                        IsDefault="True"
+                                        Margin="0 0 8 0"
+                                        Command="materialDesign:DialogHost.CloseDialogCommand"
+                                        Content="{Binding positiveButtonTitle}">
+                                <Button.CommandParameter>
+                                    <system:Boolean>False</system:Boolean>
+                                </Button.CommandParameter>
+                            </Button>
+                            <Button Style="{StaticResource MaterialDesignFlatButton}"
+                                        IsDefault="True"
+                                        Margin="0 0 -16 0"
+                                        Command="materialDesign:DialogHost.CloseDialogCommand"
+                                        Content="{Binding negativeButtonTitle}"
+                                        Visibility="{Binding displayNegativeButton}">
+                                <Button.CommandParameter>
+                                    <system:Boolean>True</system:Boolean>
+                                </Button.CommandParameter>
+                            </Button>
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </materialDesign:DialogHost.DialogContentTemplate>
+        </materialDesign:DialogHost>
+        <!--#endregion -->
+
+        <!--#region LOADING-->
+        <materialDesign:DialogHost Identifier="LoadingDialog" Style="{StaticResource MaterialDesignEmbeddedDialogHost}" DialogMargin="8">
+            <materialDesign:DialogHost.DialogContentTemplate>
+                <DataTemplate DataType="local:DialogMessage">
+                    <materialDesign:Card UniformCornerRadius="0" Padding="4">
+                        <ProgressBar Style="{StaticResource MaterialDesignCircularProgressBar}" 
+                                     Value="50"
+                                     IsIndeterminate="True" />
+                    </materialDesign:Card>
+                </DataTemplate>
+            </materialDesign:DialogHost.DialogContentTemplate>
+        </materialDesign:DialogHost>
+        <!--#endregion-->
+        
+        <!--#region CUSTOM-->
+
+        <materialDesign:DialogHost Identifier="RootDialog">
+        </materialDesign:DialogHost>
+        
+        <!--#endregion-->
+    </Grid>
+</UserControl>

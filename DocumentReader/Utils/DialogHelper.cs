@@ -63,7 +63,7 @@ namespace DocumentReader.Utils
                         message = msg,
                         negativeButtonTitle = negativeButtonTitle,
                         positiveButtonTitle = positiveButtonTitle,
-                        displayNegativeButton = displayNegativeButton ? Visibility.Visible : Visibility.Collapsed,
+                        displayNegativeButton = (negativeButtonTitle != "Cancel" || displayNegativeButton) ? Visibility.Visible : Visibility.Collapsed,
                     },
                     dialogIdentifier,
                     new DialogOpenedEventHandler((object sender, DialogOpenedEventArgs args) =>

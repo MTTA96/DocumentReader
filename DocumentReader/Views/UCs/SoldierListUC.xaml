@@ -33,12 +33,22 @@
             <Border BorderBrush="{DynamicResource MaterialDesignDivider}" BorderThickness="0 0 0 1" />
         </Grid>
 
-        <DataGrid x:Name="soldierList" AutoGenerateColumns="False" Grid.Row="1" CanUserAddRows="False" ItemsSource="{Binding Soldiers}">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Id" MinWidth="70" Binding="{Binding Id}" IsReadOnly="True"/>
-                <DataGridTextColumn Header="Tên" MinWidth="100" Binding="{Binding Name}" IsReadOnly="True" />
-                <DataGridTextColumn Header="Năm sinh" MinWidth="100" Binding="{Binding DOB}" IsReadOnly="True" />
-            </DataGrid.Columns>
-        </DataGrid>
+        <!-- SOLDIER LIST -->
+        <ListView Name="lvSoldierList" Grid.Row="1"
+            ItemsSource="{Binding Soldiers}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn
+                        DisplayMemberBinding="{Binding serial}"
+                        Header="STT" />
+                    <GridViewColumn
+                        DisplayMemberBinding="{Binding Name}"
+                        Header="Tên" />
+                    <GridViewColumn
+                        DisplayMemberBinding="{Binding Dob}"
+                        Header="Ngày sinh" />
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </UserControl>

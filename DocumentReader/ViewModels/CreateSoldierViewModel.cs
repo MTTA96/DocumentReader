@@ -12,7 +12,8 @@ namespace DocumentReader.ViewModels
 {
     class CreateSoldierViewModel : INotifyPropertyChanged
     {
-        DocumentReaderEntities context = new DocumentReaderEntities();
+        SoldierVM soldierVM = new SoldierVM();
+        DocumentReaderContext context = new DocumentReaderContext();
         private string _name;
 
         public string Name
@@ -33,22 +34,7 @@ namespace DocumentReader.ViewModels
 
         public async Task<bool> AddSoldier(Soldier soldier)
         {
-            try
-            {
-                context.Soldiers.Add(new Soldier()
-                {
-                    Id = 0,
-                    Name = soldier.Name,
-                    DOB = soldier.DOB
-                });
-                await context.SaveChangesAsync();
-                return true;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Thêm thất bại, vui lòng thử lại!");
-                return false;
-            }
+            return await soldierVM.AddSoldier(soldier);
         }
 
     }

@@ -44,10 +44,15 @@ namespace DocumentReader.Views.UCs
 
         private async void addSoldier()
         {
+            if(dobPicker.SelectedDate == null)
+            {
+                return;
+            }
+            var selectedDob = dobPicker.SelectedDate ?? DateTime.Now;
             var result = await viewModel.AddSoldier(new Models.Soldier()
             {
                 Name = txbName.Text,
-                DOB = dobPicker.SelectedDate
+                Dob = selectedDob.ToString("dd/MM/yyyy")
             });
 
             if (result)
